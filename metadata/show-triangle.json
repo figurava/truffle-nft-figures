@@ -1,0 +1,12 @@
+{
+  "name": "Triangle Figure",
+  "description": "Triangle ac asperiores voluptas, justo illo ultricies euismod ullam nulla, alias platea",
+  "image": "https://assets.figurava.com/github/figures/triangle.jpg",
+  "external_link": "https://figurava.com/?figure=triangle",
+  "attributes": [
+    {
+      "trait_type": "Figure",
+      "value": "triangle"
+    }
+  ]
+}

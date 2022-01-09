@@ -1,0 +1,12 @@
+{
+  "name": "Square Figure",
+  "description": "Square ac asperiores voluptas, justo illo ultricies euismod ullam nulla, alias platea",
+  "image": "https://assets.figurava.com/github/figures/square.jpg",
+  "external_link": "https://figurava.com/?figure=square",
+  "attributes": [
+    {
+      "trait_type": "Figure",
+      "value": "square"
+    }
+  ]
+}

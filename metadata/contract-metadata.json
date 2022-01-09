@@ -1,0 +1,8 @@
+{
+  "name": "Lootbox Contract",
+  "description": "You can add a contractURI method to your ERC721 or ERC1155 contract that returns a URL for the storefront-level metadata for your contract.",
+  "image": "https://assets.figurava.com/github/figures/contract.png",
+  "external_link": "https://figurava.com",
+  "seller_fee_basis_points": 0,
+  "fee_recipient": "0xA97F337c39cccE66adfeCB2BF99C1DdC54C2D720"
+}

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-gray-800;
+    @apply bg-gradient-to-r from-lime-300 via-gray-300 to-blue-300
+}
+
+.btn-reveal {
+    @apply py-1 px-6 font-semibold rounded-full bg-teal-500 text-white hover:bg-lime-300 hover:text-lime-600;
+}
+
+.min-h-screen { min-height: 100vh; }

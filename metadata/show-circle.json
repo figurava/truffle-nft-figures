@@ -1,0 +1,12 @@
+{
+  "name": "Circle Figure",
+  "description": "Circle ac asperiores voluptas, justo illo ultricies euismod ullam nulla, alias platea",
+  "image": "https://assets.figurava.com/github/figures/circle.jpg",
+  "external_link": "https://figurava.com/?figure=circle",
+  "attributes": [
+    {
+      "trait_type": "Figure",
+      "value": "circle"
+    }
+  ]
+}
