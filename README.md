@@ -1,6 +1,6 @@
-## Figures NFT
+## Figures NFT Collection
 
-Write an NFT contract and mint a `Figure` using Ethereum Wallet. 
+Write an NFT contract and mint collectible NFT Figures using Ethereum Wallet.
 
 ### Features
 - NFT Contract with supply limits. Predefined sale price and presale functionality.
