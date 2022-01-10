@@ -36,11 +36,11 @@ truffle compile # Compile contracts
 truffle migrate # Migrate contracts `migrations/1_deploy_figurava.js` has initial config
 ```
 
-After contracts are compiled,  copy contract ABI from compiled artifacts json file to project. 
+After contracts are compiled,  copy contract ABI from compiled artifacts json file to project.
 
  `TruffleContract` requires ABI data as constructor parameter so that we can call contract methods.
 
->  Create ABI script `create_abi.js` is available in the projects home folder.  
+>  Create ABI script `create_abi.js` is available in the projects home folder.
 
 After building contracts, pick ABI from contract artifacts and write to `pages/artifacts` directory.
 
@@ -48,7 +48,7 @@ After building contracts, pick ABI from contract artifacts and write to `pages/a
 node create_abi.js
 ```
 
-That will write contract's ABI and network information to `./pages/artifacts/FiguravaABI.json` file. 
+That will write contract's ABI and network information to `./pages/artifacts/FiguravaABI.json` file.
 
 
 
@@ -65,21 +65,27 @@ Visit `http://localhost:3000` to view your application and connect with Metamask
 
 Access deployed contract with truffle console to make sure main sale is started or minter wallets are whitelisted.
 
-```js
+```bash
+# initialize console
 truffle console
+
+# fetch deployed contract
 figurava = await Figurava.deployed()
 
-// if sale not started
+# if sale not started
 figurava.updateMainSaleStatus(true);
 
-// if paused
+# if paused
 figurava.start();
 
-// Test mint from an address
+# Test mint from an address
 figurava.mint("0x3E0e7Ad0f3BE001CcaCeE2891CF135115e32D6b7",1, {from: "0x3E0e7Ad0f3BE001CcaCeE2891CF135115e32D6b7", value: web3.utils.toHex(web3.utils.toWei('0.05', 'ether'))})
 
-// Check how many minted
+# Check how many minted
 (await figurava.balanceOf("0x3E0e7Ad0f3BE001CcaCeE2891CF135115e32D6b7")).toString()
+
+# Withdraw balance
+figurava.withdrawAll();
 ```
 
 ### Metadata Set Up
@@ -92,6 +98,9 @@ Those json responses could be used for testing of the deployed asset server.
 
 #### Helpful
 
-[Openzeppelin contract wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) provides a quick boilerplate for NFT contract creation. 
+[Openzeppelin contract wizard](https://docs.openzeppelin.com/contracts/4.x/wizard) provides a quick boilerplate for NFT contract creation.
+
+[Web3model](https://github.com/Web3Modal/web3modal) is a react library to add support for multiple providers.
+
 [Figurava](https://figurava.com) has some more posts.
 
