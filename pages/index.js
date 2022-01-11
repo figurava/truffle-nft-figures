@@ -3,13 +3,13 @@ import Image from 'next/image'
 import axios from 'axios'
 
 import React from 'react'
-import { Navbar} from './components/Navbar'
-import { MetamaskConnect} from './components/MetamaskConnect'
-import { WalletDetails} from './components/WalletDetails'
-import { MintSection } from './sections/MintSection'
-import { InfoSection } from './sections/InfoSection'
-import { Footer } from './sections/Footer'
-import web3Actions from './actions/web3Actions'
+import { Navbar} from './../src/components/Navbar'
+import { MetamaskConnect} from './../src/components/MetamaskConnect'
+import { WalletDetails} from './../src/components/WalletDetails'
+import { MintSection } from './../src/sections/MintSection'
+import { InfoSection } from './../src/sections/InfoSection'
+import { Footer } from './../src/sections/Footer'
+import web3Actions from './../src/actions/web3Actions'
 
 export default class Home extends React.Component {
 

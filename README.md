@@ -42,13 +42,13 @@ After contracts are compiled,  copy contract ABI from compiled artifacts json fi
 
 >  Create ABI script `create_abi.js` is available in the projects home folder.
 
-After building contracts, pick ABI from contract artifacts and write to `pages/artifacts` directory.
+After building contracts, pick ABI from contract artifacts and write to `src/artifacts` directory.
 
 ```bash
 node create_abi.js
 ```
 
-That will write contract's ABI and network information to `./pages/artifacts/FiguravaABI.json` file.
+That will write contract's ABI and network information to `./src/artifacts/FiguravaABI.json` file.
 
 
 
